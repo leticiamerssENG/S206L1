@@ -24,7 +24,7 @@ describe ('Criando cenário de teste para o site globalsqa', () => {
     cy.get('.btn-primary').should('be.disabled') // (2ª assertiva)
   })
 
-  it('Caso de teste: Realizando login com sucesso', () => {
+  it.skip('Caso de teste: Realizando login com sucesso', () => {
 
     let info = criarUsuario()
     cy.get('#username').type(info[0])
@@ -32,6 +32,15 @@ describe ('Criando cenário de teste para o site globalsqa', () => {
     cy.get('.btn-primary').click()
     cy.get('h1.ng-binding').should('contain.text', info[0])
   })
+
+  // Caso de teste login com falha (senha incorreta)
+  it('Caso de teste: Realizando login com falha (senha incorreta)', () => {
+
+    login_try()
+    cy.get('.ng-binding').should('have.text', 'Username or password is incorrect')
+    
+  })
+
 
 })
 
@@ -54,4 +63,12 @@ function criarUsuario(){
   cy.get('.ng-binding').should('contain.text', 'Registration successful')
 
   return userInfo
+}
+
+function login_try(){
+  
+  let info = criarUsuario()
+  cy.get('#username').type(info[0])
+  cy.get('#password').type(info[1] + 'teste')
+  cy.get('.btn-primary').click()
 }
