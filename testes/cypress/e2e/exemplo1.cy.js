@@ -2,7 +2,7 @@
 
 describe ('Criando cenário de teste para o site globalsqa', () => {
 
-  it.skip('Caso de teste: Registrando um usuário no site com sucesso', () =>{     // Caso de teste // .skip o cypress ignora e teste a partir dos demais
+  it('Caso de teste: Registrando um usuário no site com sucesso', () =>{     // Caso de teste // .skip o cypress ignora e teste a partir dos demais
     cy.visit('https://globalsqa.com/angularJs-protractor/registration-login-example/#/login') //visita pagina
     cy.get('.btn-link').click() // Clica no botao 'Register'
     cy.get('#firstName').type('inatel') // Preenche campo 'First Name'
@@ -13,7 +13,7 @@ describe ('Criando cenário de teste para o site globalsqa', () => {
     cy.get('.ng-binding').should('contain.text', 'Registration successful') // contain.text - o texto deve estar contido, mas, pode haver mais coisas escrito
   })
 
-  it.skip('Caso de teste: Registrando um usuário no site com falha (faltando senha)', () =>{     // Caso de teste 2
+  it('Caso de teste: Registrando um usuário no site com falha (faltando senha)', () =>{     // Caso de teste 2
     cy.visit('https://globalsqa.com/angularJs-protractor/registration-login-example/#/register') //visita pagina
     cy.get('#firstName').type('inatel') // Preenche campo 'First Name'
     cy.get('#Text1').type('inatel')
@@ -24,13 +24,23 @@ describe ('Criando cenário de teste para o site globalsqa', () => {
     cy.get('.btn-primary').should('be.disabled') // (2ª assertiva)
   })
 
-  it.skip('Caso de teste: Realizando login com sucesso', () => {
+  it('Caso de teste: Realizando login com sucesso', () => {
 
     let info = criarUsuario()
     cy.get('#username').type(info[0])
     cy.get('#password').type(info[1])
     cy.get('.btn-primary').click()
     cy.get('h1.ng-binding').should('contain.text', info[0])
+  })
+
+  it('Caso de teste: Deletando um usuário com sucesso', () => {
+
+    let info = criarUsuario()
+    cy.login(info[0], info[1])
+    cy.get('.ng-binding > a').click()
+    cy.get('.btn').click()
+    cy.login(info[0], info[1]) 
+    cy.get('.ng-binding').should('have.text', 'Username or password is incorrect')   
   })
 
   // Caso de teste login com falha (senha incorreta)
