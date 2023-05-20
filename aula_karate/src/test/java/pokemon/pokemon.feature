@@ -33,3 +33,24 @@ Scenario: Testando retorno pokemon Red entrando em um dos elementos do array de 
         Then status 200
         And match response.name == "es" 
         And match response.id == 7 
+   
+Scenario: Testando retorno ditto e verificando o JSON.
+        Given url url_base
+        And path 'pokemon/ditto'
+        When method get
+        Then status 200 
+        And match response.name == "ditto" 
+        And match response.id == 132  
+        
+Scenario: Testando retorno pokemon yellow entrando em um dos elementos do array de idiomas e testando retorno JSON
+        Given url url_base
+        And path '/version/3/'
+        When method get
+        Then status 200 
+        And def idioma = $.names[1].language.url
+        And print idioma
+        And url idioma
+        When method get
+        Then status 200
+        And match response.name == "ko" 
+        And match response.id == 3   
