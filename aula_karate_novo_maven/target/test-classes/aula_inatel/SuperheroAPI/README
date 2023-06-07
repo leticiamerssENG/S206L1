@@ -1,0 +1,7 @@
+Lista de Exercícios - Teste de API com Karate
+
+Para executar o projeto:
+
+- Baixar a pasta do projeto;
+- Acessar a pasta raiz do projeto e executar o comando 'mvn test -Dtest=SuperheroRunner' (sem as aspas simples);
+- o relatório será gerado automaticamente na pasta 'karate-reports' após a execução do comando mencionado anteriormente com a extensão .html que pode ser acessada através de um navegador.

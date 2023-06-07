@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"aula_inatel\/SuperheroAPI\/superhero[1:6]","start":1686023494546,"end":1686023496403,"title":"aula_inatel\/SuperheroAPI\/superhero[1:6] 00:51:34.546-00:51:36.403 Testando retorno Id 1"},{"id":2,"group":1,"content":"aula_inatel\/SuperheroAPI\/superhero[2:11]","start":1686023496420,"end":1686023497570,"title":"aula_inatel\/SuperheroAPI\/superhero[2:11] 00:51:36.420-00:51:37.570 Testando retorno Id invalido (caso negativo)"},{"id":3,"group":1,"content":"aula_inatel\/SuperheroAPI\/superhero[3:18]","start":1686023497578,"end":1686023498673,"title":"aula_inatel\/SuperheroAPI\/superhero[3:18] 00:51:37.578-00:51:38.673 Testando retorno Ocupação do Id 70"},{"id":4,"group":1,"content":"aula_inatel\/SuperheroAPI\/superhero[4:24]","start":1686023498682,"end":1686023499797,"title":"aula_inatel\/SuperheroAPI\/superhero[4:24] 00:51:38.682-00:51:39.797 Testando retorno Nome do Id 50"},{"id":5,"group":1,"content":"aula_inatel\/SuperheroAPI\/superhero[5:31]","start":1686023499806,"end":1686023500907,"title":"aula_inatel\/SuperheroAPI\/superhero[5:31] 00:51:39.806-00:51:40.907 Testando tipo de retorno de alguns dados do Id 30"},{"id":6,"group":1,"content":"aula_inatel\/SuperheroAPI\/superhero[6:37]","start":1686023500914,"end":1686023502003,"title":"aula_inatel\/SuperheroAPI\/superhero[6:37] 00:51:40.914-00:51:42.003 Testando tipo de retorno de alguns dados do Id 30"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>aula_inatel.SuperheroAPI.superhero</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-06-06 12:51:42 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Testando retorno Id 1</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:11]"><span>[2:11]</span> <span>Testando retorno Id invalido (caso negativo)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:18]"><span>[3:18]</span> <span>Testando retorno Ocupação do Id 70</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:24]"><span>[4:24]</span> <span>Testando retorno Nome do Id 50</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:31]"><span>[5:31]</span> <span>Testando tipo de retorno de alguns dados do Id 30</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:37]"><span>[6:37]</span> <span>Testando tipo de retorno de alguns dados do Id 30</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">aula_inatel/SuperheroAPI/superhero.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testando API Superhero API</span>
+          <span class="feature-description">//Background:
+//  * def url_base = &#39;https://superheroapi.com/api/6303787349701602&#39;</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Testando retorno Id 1</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1654</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://superheroapi.com/api/6303787349701602/1&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">00:51:34.698 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1648</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">00:51:35.013 request:
+1 &gt; GET https://superheroapi.com/api/6303787349701602/1
+1 &gt; Host: superheroapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:35.814 request:
+2 &gt; GET https://superheroapi.com/api/6303787349701602/1
+2 &gt; Host: www.superheroapi.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:36.396 response time in milliseconds: 559
+2 &lt; 200
+2 &lt; Connection: Keep-Alive
+2 &lt; Keep-Alive: timeout=5, max=100
+2 &lt; x-powered-by: PHP/7.2.34
+2 &lt; access-control-allow-origin: *
+2 &lt; access-control-allow-credentials: false
+2 &lt; access-control-allow-methods: GET
+2 &lt; access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept
+2 &lt; access-control-max-age: 86400
+2 &lt; content-type: application/json
+2 &lt; vary: Accept-Encoding
+2 &lt; date: Tue, 06 Jun 2023 03:51:36 GMT
+2 &lt; server: LiteSpeed
+2 &lt; platform: hostinger
+2 &lt; content-security-policy: upgrade-insecure-requests
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=2592000, h3-29=&quot;:443&quot;; ma=2592000, h3-Q050=&quot;:443&quot;; ma=2592000, h3-Q046=&quot;:443&quot;; ma=2592000, h3-Q043=&quot;:443&quot;; ma=2592000, quic=&quot;:443&quot;; ma=2592000; v=&quot;43,46&quot;
+{&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/www.superherodb.com\/pictures2\/portraits\/10\/100\/10060.jpg&quot;},&quot;appearance&quot;:{&quot;eye-color&quot;:&quot;Yellow&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;race&quot;:&quot;Human&quot;,&quot;weight&quot;:[&quot;980 lb&quot;,&quot;441 kg&quot;],&quot;height&quot;:[&quot;6&#39;8&quot;,&quot;203 cm&quot;],&quot;hair-color&quot;:&quot;No Hair&quot;},&quot;response&quot;:&quot;success&quot;,&quot;work&quot;:{&quot;occupation&quot;:&quot;Musician, adventurer, author; formerly talk show host&quot;,&quot;base&quot;:&quot;-&quot;},&quot;name&quot;:&quot;A-Bomb&quot;,&quot;powerstats&quot;:{&quot;strength&quot;:&quot;100&quot;,&quot;durability&quot;:&quot;80&quot;,&quot;combat&quot;:&quot;64&quot;,&quot;power&quot;:&quot;24&quot;,&quot;speed&quot;:&quot;17&quot;,&quot;intelligence&quot;:&quot;38&quot;},&quot;id&quot;:&quot;1&quot;,&quot;biography&quot;:{&quot;place-of-birth&quot;:&quot;Scarsdale, Arizona&quot;,&quot;aliases&quot;:[&quot;Rick Jones&quot;],&quot;first-appearance&quot;:&quot;Hulk Vol 2 #2 (April, 2008) (as A-Bomb)&quot;,&quot;publisher&quot;:&quot;Marvel Comics&quot;,&quot;alignment&quot;:&quot;good&quot;,&quot;full-name&quot;:&quot;Richard Milhouse Jones&quot;,&quot;alter-egos&quot;:&quot;No alter egos found.&quot;},&quot;connections&quot;:{&quot;relatives&quot;:&quot;Marlo Chandler-Jones (wife); Polly (aunt); Mrs. Chandler (mother-in-law); Keith Chandler, Ray Chandler, three unidentified others (brothers-in-law); unidentified father (deceased); Jackie Shorr (alleged mother; unconfirmed)&quot;,&quot;group-affiliation&quot;:&quot;Hulk Family; Excelsior (sponsor), Avengers (honorary member); formerly partner of the Hulk, Captain America and Captain Marvel; Teen Brigade; ally of Rom&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:11]</span>
+                <span class="scenario-name">Testando retorno Id invalido (caso negativo)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1148</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://superheroapi.com/api/6303787349701602/1000&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">00:51:36.421 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1097</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">00:51:36.424 request:
+1 &gt; GET https://superheroapi.com/api/6303787349701602/1000
+1 &gt; Host: superheroapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:36.963 request:
+2 &gt; GET https://superheroapi.com/api/6303787349701602/1000
+2 &gt; Host: www.superheroapi.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:37.517 response time in milliseconds: 553
+2 &lt; 200
+2 &lt; Connection: Keep-Alive
+2 &lt; Keep-Alive: timeout=5, max=100
+2 &lt; x-powered-by: PHP/7.2.34
+2 &lt; access-control-allow-origin: *
+2 &lt; access-control-allow-credentials: false
+2 &lt; access-control-allow-methods: GET
+2 &lt; access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept
+2 &lt; access-control-max-age: 86400
+2 &lt; content-type: application/json
+2 &lt; vary: Accept-Encoding
+2 &lt; date: Tue, 06 Jun 2023 03:51:37 GMT
+2 &lt; server: LiteSpeed
+2 &lt; platform: hostinger
+2 &lt; content-security-policy: upgrade-insecure-requests
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=2592000, h3-29=&quot;:443&quot;; ma=2592000, h3-Q050=&quot;:443&quot;; ma=2592000, h3-Q046=&quot;:443&quot;; ma=2592000, h3-Q043=&quot;:443&quot;; ma=2592000, quic=&quot;:443&quot;; ma=2592000; v=&quot;43,46&quot;
+{&quot;response&quot;:&quot;error&quot;,&quot;error&quot;:&quot;invalid id&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.response == &#39;error&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">51</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:18]</span>
+                <span class="scenario-name">Testando retorno Ocupação do Id 70</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1093</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://superheroapi.com/api/6303787349701602/70/work&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">00:51:37.579 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1090</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">00:51:37.583 request:
+1 &gt; GET https://superheroapi.com/api/6303787349701602/70/work
+1 &gt; Host: superheroapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:38.126 request:
+2 &gt; GET https://superheroapi.com/api/6303787349701602/70/work
+2 &gt; Host: www.superheroapi.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:38.670 response time in milliseconds: 543
+2 &lt; 200
+2 &lt; Connection: Keep-Alive
+2 &lt; Keep-Alive: timeout=5, max=100
+2 &lt; x-powered-by: PHP/7.2.34
+2 &lt; access-control-allow-origin: *
+2 &lt; access-control-allow-credentials: false
+2 &lt; access-control-allow-methods: GET
+2 &lt; access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept
+2 &lt; access-control-max-age: 86400
+2 &lt; content-type: application/json
+2 &lt; vary: Accept-Encoding
+2 &lt; date: Tue, 06 Jun 2023 03:51:38 GMT
+2 &lt; server: LiteSpeed
+2 &lt; platform: hostinger
+2 &lt; content-security-policy: upgrade-insecure-requests
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=2592000, h3-29=&quot;:443&quot;; ma=2592000, h3-Q050=&quot;:443&quot;; ma=2592000, h3-Q046=&quot;:443&quot;; ma=2592000, h3-Q043=&quot;:443&quot;; ma=2592000, quic=&quot;:443&quot;; ma=2592000; v=&quot;43,46&quot;
+{&quot;occupation&quot;:&quot;Businessman&quot;,&quot;response&quot;:&quot;success&quot;,&quot;name&quot;:&quot;Batman&quot;,&quot;id&quot;:&quot;70&quot;,&quot;base&quot;:&quot;Batcave, Stately Wayne Manor, Gotham City; Hall of Justice, Justice League Watchtower&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.occupation == &#39;Businessman&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:24]</span>
+                <span class="scenario-name">Testando retorno Nome do Id 50</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1114</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://superheroapi.com/api/6303787349701602/50/work&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">00:51:38.683 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1112</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">00:51:38.686 request:
+1 &gt; GET https://superheroapi.com/api/6303787349701602/50/work
+1 &gt; Host: superheroapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:39.251 request:
+2 &gt; GET https://superheroapi.com/api/6303787349701602/50/work
+2 &gt; Host: www.superheroapi.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:39.795 response time in milliseconds: 542
+2 &lt; 200
+2 &lt; Connection: Keep-Alive
+2 &lt; Keep-Alive: timeout=5, max=100
+2 &lt; x-powered-by: PHP/7.2.34
+2 &lt; access-control-allow-origin: *
+2 &lt; access-control-allow-credentials: false
+2 &lt; access-control-allow-methods: GET
+2 &lt; access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept
+2 &lt; access-control-max-age: 86400
+2 &lt; content-type: application/json
+2 &lt; vary: Accept-Encoding
+2 &lt; date: Tue, 06 Jun 2023 03:51:39 GMT
+2 &lt; server: LiteSpeed
+2 &lt; platform: hostinger
+2 &lt; content-security-policy: upgrade-insecure-requests
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=2592000, h3-29=&quot;:443&quot;; ma=2592000, h3-Q050=&quot;:443&quot;; ma=2592000, h3-Q046=&quot;:443&quot;; ma=2592000, h3-Q043=&quot;:443&quot;; ma=2592000, quic=&quot;:443&quot;; ma=2592000; v=&quot;43,46&quot;
+{&quot;occupation&quot;:&quot;Adventurer, Retired Professor of Nuclear Physics&quot;,&quot;response&quot;:&quot;success&quot;,&quot;name&quot;:&quot;Atom&quot;,&quot;id&quot;:&quot;50&quot;,&quot;base&quot;:&quot;GBS Building, Gotham City (former) Calvin College on Earth-Two&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.name == &#39;Atom&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:31]</span>
+                <span class="scenario-name">Testando tipo de retorno de alguns dados do Id 30</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1096</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://superheroapi.com/api/6303787349701602/30/connections&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">00:51:39.811 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1093</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">00:51:39.814 request:
+1 &gt; GET https://superheroapi.com/api/6303787349701602/30/connections
+1 &gt; Host: superheroapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:40.358 request:
+2 &gt; GET https://superheroapi.com/api/6303787349701602/30/connections
+2 &gt; Host: www.superheroapi.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:40.904 response time in milliseconds: 545
+2 &lt; 200
+2 &lt; Connection: Keep-Alive
+2 &lt; Keep-Alive: timeout=5, max=100
+2 &lt; x-powered-by: PHP/7.2.34
+2 &lt; access-control-allow-origin: *
+2 &lt; access-control-allow-credentials: false
+2 &lt; access-control-allow-methods: GET
+2 &lt; access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept
+2 &lt; access-control-max-age: 86400
+2 &lt; content-type: application/json
+2 &lt; vary: Accept-Encoding
+2 &lt; date: Tue, 06 Jun 2023 03:51:41 GMT
+2 &lt; server: LiteSpeed
+2 &lt; platform: hostinger
+2 &lt; content-security-policy: upgrade-insecure-requests
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=2592000, h3-29=&quot;:443&quot;; ma=2592000, h3-Q050=&quot;:443&quot;; ma=2592000, h3-Q046=&quot;:443&quot;; ma=2592000, h3-Q043=&quot;:443&quot;; ma=2592000, quic=&quot;:443&quot;; ma=2592000; v=&quot;43,46&quot;
+{&quot;response&quot;:&quot;success&quot;,&quot;name&quot;:&quot;Ant-Man&quot;,&quot;id&quot;:&quot;30&quot;,&quot;relatives&quot;:&quot;-&quot;,&quot;group-affiliation&quot;:&quot;Avengers Academy, Secret Avengers; formerly Mighty Avengers, Avengers (founding member), Defenders, Future Iron Man&#39;s Team&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $ contains {response: &#39;#string&#39;, id: &#39;#string&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:37]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:37]</span>
+                <span class="scenario-name">Testando tipo de retorno de alguns dados do Id 30</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1087</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://superheroapi.com/api/6303787349701602/30/connection&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">00:51:40.915 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1083</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">00:51:40.920 request:
+1 &gt; GET https://superheroapi.com/api/6303787349701602/30/connection
+1 &gt; Host: superheroapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:41.460 request:
+2 &gt; GET https://superheroapi.com/api/6303787349701602/30/connection
+2 &gt; Host: www.superheroapi.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/20.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+00:51:42.000 response time in milliseconds: 539
+2 &lt; 200
+2 &lt; Connection: Keep-Alive
+2 &lt; Keep-Alive: timeout=5, max=100
+2 &lt; x-powered-by: PHP/7.2.34
+2 &lt; access-control-allow-origin: *
+2 &lt; access-control-allow-credentials: false
+2 &lt; access-control-allow-methods: GET
+2 &lt; access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept
+2 &lt; access-control-max-age: 86400
+2 &lt; content-type: application/json
+2 &lt; vary: Accept-Encoding
+2 &lt; date: Tue, 06 Jun 2023 03:51:42 GMT
+2 &lt; server: LiteSpeed
+2 &lt; platform: hostinger
+2 &lt; content-security-policy: upgrade-insecure-requests
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=2592000, h3-29=&quot;:443&quot;; ma=2592000, h3-Q050=&quot;:443&quot;; ma=2592000, h3-Q046=&quot;:443&quot;; ma=2592000, h3-Q043=&quot;:443&quot;; ma=2592000, quic=&quot;:443&quot;; ma=2592000; v=&quot;43,46&quot;
+{&quot;response&quot;:&quot;error&quot;,&quot;name&quot;:&quot;Ant-Man&quot;,&quot;id&quot;:&quot;30&quot;,&quot;error&quot;:&quot;invalid property request&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.response == &#39;error&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
