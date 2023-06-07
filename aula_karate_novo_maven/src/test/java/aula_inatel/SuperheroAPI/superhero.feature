@@ -1,8 +1,5 @@
 Feature: Testando API Superhero API
 
-//Background:
-//  * def url_base = 'https://superheroapi.com/api/6303787349701602'
-
 Scenario: Testando retorno Id 1
   Given url "https://superheroapi.com/api/6303787349701602/1"
   When method get
